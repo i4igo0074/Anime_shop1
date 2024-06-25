@@ -4,14 +4,13 @@
 *.pyc
 __pycache__/
 db.sqlite3
-media/
 
-# Environments
+# If you're using environments like venv
+venv/
 .env
-*.env
 
-# macOS specific
-.DS_Store
+# If you're using Jupyter notebooks
+.ipynb_checkpoints
 
-# VS Code specific
-.vscode/
+# PyCharm specific
+.idea/

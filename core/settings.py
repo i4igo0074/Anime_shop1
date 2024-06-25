@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'mainapp',
     'authorization',
+    'products',
 ]
 
 AUTH_USER_MODEL = 'authorization.CustomerUser'

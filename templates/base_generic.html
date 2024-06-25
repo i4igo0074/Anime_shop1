@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}My Site{% endblock %}</title>
     <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/cart.css' %}">
 </head>
 <body>
     <header>
@@ -19,16 +20,16 @@
             <ul class="menu_list">
                 <li><a href="{% url 'index' %}">Главная</a></li>
                 <li><a href="#">Акции</a></li>
-                <li><a href="#">Коллекции</a></li>
+                <li><a href="{% url 'collection' %}">Коллекции</a></li>
                 <li><a href="{% url 'catalog' %}">Каталог</a></li>
                 <li><a href="{% url 'about-company' %}">О нас</a></li>
             </ul>
         </nav>
         <div class="icon">
             <ul class="icon_list">
-                <li><a href="#">
-                    <img src="{% static 'img/izbr.png' %}" alt="" class="icon_img">
-                </a></li>
+                <li><a href="{% url 'favorites' %}">
+                    <img src="{% static 'img/izbr.png' %}" alt="" class="icon_img" id="favorite-icon">
+                  </a></li>
                 <li><a href="#">
                     <img src="{% static 'img/akk.png' %}" alt="" class="icon_img">
                 </a></li>
